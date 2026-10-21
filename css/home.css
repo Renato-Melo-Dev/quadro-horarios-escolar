@@ -1,0 +1,1848 @@
+/* Identidade da escola: azul do símbolo, marinho das fardas e dourado da águia. */
+.home-diario {
+    --tinta: #172b58;
+    --papel: #f3f5f8;
+    --linha: #d3dae5;
+    background: var(--papel);
+    color: var(--tinta)
+}
+
+.home-diario .sidebar {
+    background: var(--tinta);
+    border: 0;
+    width: 88px
+}
+
+.home-diario .marca {
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-style: italic
+}
+
+.home-diario .marca span {
+    background: #d7ad50;
+    border-radius: 0
+}
+
+.home-diario .nav-item {
+    color: #cbd5ee;
+    border-radius: 3px
+}
+
+.home-diario .nav-item.ativo,
+.home-diario .nav-item:hover {
+    background: #2d45c3;
+    color: #ffe2a0
+}
+
+.home-diario .nav-item>span {
+    background: #172b58;
+    border-radius: 2px
+}
+
+.home-diario .sidebar-bottom .avatar {
+    background: #d7ad50;
+    color: #172b58;
+    border-radius: 3px
+}
+
+.home-diario .topbar {
+    background: var(--papel);
+    border-bottom: 1px solid var(--linha);
+    height: 76px
+}
+
+.home-diario .nome-produto {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: -1px
+}
+
+.home-diario .nome-produto span {
+    color: #52617c
+}
+
+.home-diario .escola {
+    color: #52617c
+}
+
+.home-diario .perfil {
+    border: 1px solid #c4ccdc;
+    background: transparent;
+    border-radius: 3px
+}
+
+.home-diario main {
+    padding-top: 30px;
+    max-width: 1500px
+}
+
+.home-diario .capa-diario {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    align-items: stretch;
+    gap: 30px;
+    background: var(--tinta);
+    color: #ffffff;
+    padding: 36px 38px 46px;
+    margin-bottom: 38px;
+    box-shadow: 6px 6px 0 #d6deed;
+    border-top: 5px solid #d7ad50
+}
+
+.home-diario .capa-diario:after {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    left: 38px;
+    right: 38px;
+    border-bottom: 1px solid #657ba7
+}
+
+.home-diario .eyebrow {
+    color: #cbd8f5;
+    font-size: 10px;
+    letter-spacing: 1.7px
+}
+
+.home-diario h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(44px, 5vw, 72px);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -2.5px;
+    margin-top: 23px
+}
+
+.home-diario h1 em {
+    font-weight: 400;
+    color: #f0ce7f
+}
+
+.home-diario .capa-texto>p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 24px
+}
+
+.home-diario .capa-texto>p>span {
+    display: block;
+    font-size: 11px;
+    color: #c6d4ed;
+    margin-top: 5px
+}
+
+.home-diario .capa-indice {
+    border-left: 1px solid #657ba7;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.home-diario .edicao {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #cbd8f5
+}
+
+.home-diario .capa-indice>strong {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 1;
+    color: #f0ce7f;
+    margin: 15px 0
+}
+
+.home-diario .capa-indice>strong>span {
+    display: block;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #eef3ff;
+    margin-top: 10px
+}
+
+.home-diario .indice-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    font-size: 11px;
+    color: #d4dff5
+}
+
+.home-diario .capa-diario .selo-demo {
+    position: absolute;
+    right: 38px;
+    bottom: 20px;
+    font-size: 8px;
+    color: #c6d4ed;
+    letter-spacing: 1px
+}
+
+.home-diario .section-header {
+    border-top: 2px solid var(--tinta);
+    padding-top: 13px;
+    align-items: flex-start
+}
+
+.home-diario .section-header h2 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: -.6px
+}
+
+.home-diario .section-header p {
+    color: #5b6780;
+    font-size: 11px
+}
+
+.home-diario .contador {
+    border: 0;
+    background: #d7ad50;
+    color: #172b58;
+    border-radius: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700
+}
+
+.home-diario .link {
+    color: #2d45c3;
+    border-bottom: 1px solid #adb9d2;
+    padding-bottom: 4px;
+    margin-top: 4px
+}
+
+.home-diario .turmas-grid {
+    gap: 0;
+    border-bottom: 1px solid var(--linha);
+    border-top: 1px solid var(--linha)
+}
+
+.home-diario .turma-card {
+    background: transparent;
+    border: 0;
+    border-right: 1px solid var(--linha);
+    border-radius: 0;
+    padding: 22px;
+    transition: background .15s
+}
+
+.home-diario .turma-card:last-child {
+    border-right: 0
+}
+
+.home-diario .turma-card:hover {
+    transform: none;
+    background: #e6ebf7
+}
+
+.home-diario .turma-icon {
+    background: none !important;
+    color: #304dc0 !important;
+    border-radius: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 20px
+}
+
+.home-diario .turma-card h3 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-top: 21px
+}
+
+.home-diario .turma-card>p {
+    color: #52617c;
+    font-size: 12px
+}
+
+.home-diario .turno {
+    color: #596a86;
+    top: 28px;
+    letter-spacing: 1.1px
+}
+
+.home-diario .card-footer {
+    border-color: var(--linha);
+    color: #52617c;
+    margin-top: 18px
+}
+
+.home-diario .card-footer i {
+    color: #2d45c3
+}
+
+.home-diario .acompanhamento-card {
+    border: 1px solid var(--linha);
+    border-left: 4px solid #b48a32;
+    border-radius: 0;
+    background: #ffffff;
+    padding: 22px
+}
+
+.home-diario .avatar {
+    border-radius: 3px;
+    background: #e6ebf7;
+    color: #30497f
+}
+
+.home-diario .tag,
+.home-diario .tag-atencao {
+    border-radius: 2px;
+    background: #e6ebf5;
+    color: #475e88
+}
+
+.home-diario .tag-atencao {
+    background: #f7e9bf;
+    color: #71551b
+}
+
+.home-diario .trilho {
+    border-radius: 0;
+    background: #edf0f6
+}
+
+.home-diario .barra {
+    border-radius: 0
+}
+
+.home-diario .anterior {
+    background: #a3b4db
+}
+
+.home-diario .atual {
+    background: #304dc0
+}
+
+.home-diario .barra-linha {
+    color: #52617c
+}
+
+.home-diario .rendimento>div>p,
+.home-diario .aluno-linha p {
+    color: #52617c
+}
+
+.home-diario .contexto {
+    border-color: var(--linha)
+}
+
+.home-diario .contexto p {
+    color: #52617c
+}
+
+.home-diario .contexto>span {
+    color: #69758c
+}
+
+.home-diario .ferramentas {
+    gap: 0;
+    border-bottom: 1px solid var(--linha)
+}
+
+.home-diario .ferramentas>a,
+.home-diario .ferramenta-futura {
+    border: 0;
+    border-radius: 0;
+    background: none;
+    padding: 16px 10px;
+    gap: 14px
+}
+
+.home-diario .ferramentas>a {
+    border-right: 1px solid var(--linha)
+}
+
+.home-diario .ferramentas>a:hover {
+    background: #e6ebf7
+}
+
+.home-diario .ferramentas p {
+    color: #52617c
+}
+
+.home-diario .ferramenta-icon {
+    color: #304dc0
+}
+
+.home-diario .coluna-dia {
+    border-left: 0;
+    padding: 0 0 0 24px
+}
+
+.home-diario .agenda {
+    background: #e8edf7;
+    padding: 23px 21px;
+    border-top: 5px solid #d7ad50
+}
+
+.home-diario .agenda .section-header {
+    border-top: 0;
+    padding-top: 0
+}
+
+.home-diario .agenda .section-header h2 {
+    font-size: 23px
+}
+
+.home-diario .data-agenda {
+    color: #475e88;
+    border-bottom: 1px solid #c5cee1;
+    padding-bottom: 17px
+}
+
+.home-diario .data-agenda span {
+    color: #667690
+}
+
+.home-diario .aula-info {
+    border-color: #8299ce
+}
+
+.home-diario .aula-info p {
+    color: #475e88
+}
+
+.home-diario .aula-info small {
+    color: #667690
+}
+
+.home-diario .aula-info h3>span {
+    color: #304dc0
+}
+
+.home-diario .hora>span {
+    color: #667690
+}
+
+.home-diario .intervalo {
+    border-color: #c5cee1;
+    color: #667690
+}
+
+.home-diario .registros {
+    border-top: 0;
+    padding-top: 0
+}
+
+.home-diario .registros>p {
+    color: #52617c
+}
+
+.home-diario .registro-exemplo p,
+.home-diario .registro-exemplo small {
+    color: #667690
+}
+
+.home-diario .ponto {
+    background: #b48a32;
+    border-radius: 0
+}
+
+.home-diario .recurso-futuro {
+    color: #667690
+}
+
+.home-diario .nota {
+    border-radius: 0;
+    background: none;
+    border-top: 1px solid var(--linha);
+    padding: 20px 0;
+    color: #52617c
+}
+
+.home-diario .nota p {
+    font-family: Georgia, serif;
+    font-size: 14px
+}
+
+.home-diario a:focus-visible {
+    outline-color: #304dc0
+}
+
+@media(max-width:1150px) {
+    .home-diario .capa-diario {
+        padding: 30px 28px 43px
+    }
+
+    .home-diario .turno {
+        position: static;
+        display: block;
+        margin-top: 12px
+    }
+
+    .home-diario .turma-card {
+        padding: 17px
+    }
+
+    .home-diario .ferramentas>a {
+        border-right: 0;
+        border-bottom: 1px solid var(--linha)
+    }
+}
+
+@media(max-width:850px) {
+    .home-diario .coluna-dia {
+        padding: 0
+    }
+
+    .home-diario .registros {
+        margin-top: 0
+    }
+
+    .home-diario .capa-indice>strong {
+        font-size: 72px
+    }
+
+    .home-diario .capa-diario {
+        gap: 22px
+    }
+
+    .home-diario .capa-indice {
+        padding-left: 22px
+    }
+}
+
+@media(max-width:600px) {
+    .home-diario .sidebar {
+        width: 100%;
+        border-top: 3px solid #d7ad50
+    }
+
+    .home-diario .nav-item {
+        border-radius: 0;
+        color: #cbd5ee
+    }
+
+    .home-diario .nav-item>span {
+        background: none
+    }
+
+    .home-diario .topbar {
+        height: 68px
+    }
+
+    .home-diario main {
+        padding-top: 20px
+    }
+
+    .home-diario .capa-diario {
+        grid-template-columns: 1fr;
+        gap: 23px;
+        padding: 25px 24px 40px;
+        margin-bottom: 31px;
+        box-shadow: 4px 4px 0 #d6deed
+    }
+
+    .home-diario h1 {
+        font-size: 54px;
+        margin-top: 20px
+    }
+
+    .home-diario .eyebrow {
+        font-size: 8px;
+        line-height: 1.7;
+        letter-spacing: 1.2px
+    }
+
+    .home-diario .capa-texto>p {
+        margin-top: 19px
+    }
+
+    .home-diario .capa-indice {
+        border-left: 0;
+        border-top: 1px solid #657ba7;
+        padding: 15px 0 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px 24px;
+        align-items: center
+    }
+
+    .home-diario .edicao {
+        grid-column: 1/-1;
+        font-size: 8px
+    }
+
+    .home-diario .capa-indice>strong {
+        font-size: 48px;
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px
+    }
+
+    .home-diario .capa-indice>strong>span {
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin: 0
+    }
+
+    .home-diario .indice-rodape {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 10px
+    }
+
+    .home-diario .capa-diario:after {
+        left: 24px;
+        right: 24px
+    }
+
+    .home-diario .capa-diario .selo-demo {
+        right: 24px;
+        font-size: 7px
+    }
+
+    .home-diario .section-header h2 {
+        font-size: 21px
+    }
+
+    .home-diario .turma-card {
+        padding: 17px 10px
+    }
+
+    .home-diario .turma-card h3 {
+        font-size: 32px
+    }
+
+    .home-diario .turno {
+        font-size: 7px
+    }
+
+    .home-diario .turma-card>p {
+        font-size: 10px
+    }
+
+    .home-diario .card-footer {
+        font-size: 9px
+    }
+
+    .home-diario .agenda {
+        padding: 20px
+    }
+
+    .home-diario .acompanhamento-card {
+        padding: 17px
+    }
+
+    .home-diario .contexto {
+        border-left: 0
+    }
+
+    .home-diario .nota {
+        margin-top: 0
+    }
+
+    .home-diario .registros .section-header h2 {
+        font-size: 21px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .home-diario .turma-card {
+        transition: none
+    }
+}
+
+.home-diario .marca {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    margin: 22px 0 48px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.home-diario .marca img {
+    display: block;
+    width: 52px;
+    height: 52px;
+    object-fit: contain
+}
+
+.home-diario .nome-produto {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.home-diario .brasao-cabecalho {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    flex-shrink: 0
+}
+
+.home-diario .nome-produto .nome-escola {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #172b58
+}
+
+.home-diario .nome-escola small {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: .8px;
+    color: #52617c
+}
+
+.home-diario .capa-diario {
+    background: #172b58;
+    border-top-color: #304dc0
+}
+
+.home-diario .capa-indice {
+    border-left-color: #657ba7
+}
+
+.home-diario .capa-diario:after {
+    border-bottom-color: #657ba7
+}
+
+.home-diario .capa-diario h1 em {
+    color: #f0ce7f
+}
+
+@media(max-width:600px) {
+    .home-diario .marca {
+        display: none
+    }
+
+    .home-diario .brasao-cabecalho {
+        width: 37px;
+        height: 37px
+    }
+
+    .home-diario .nome-produto {
+        gap: 9px
+    }
+
+    .home-diario .nome-produto .nome-escola {
+        font-size: 12px
+    }
+
+    .home-diario .nome-escola small {
+        font-size: 9px
+    }
+
+    .home-diario .capa-indice {
+        border-left: 0;
+        border-top-color: #657ba7
+    }
+}
+
+/* Composição com volumes e alusão abstrata à asa do símbolo escolar. */
+.home-diario {
+    background: #f0f3f9
+}
+
+.home-diario main {
+    padding-top: 32px
+}
+
+.home-diario .capa-diario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    isolation: isolate;
+    overflow: hidden;
+    background: #172b58;
+    border: 0;
+    border-radius: 20px;
+    padding: 28px 34px;
+    margin-bottom: 32px;
+    box-shadow: 0 9px 24px #172b5812;
+    min-height: 185px
+}
+
+.home-diario .capa-diario:after {
+    display: none
+}
+
+.home-diario .capa-texto {
+    z-index: 1
+}
+
+.home-diario .capa-diario h1 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 650;
+    letter-spacing: -1.2px;
+    line-height: 1.15;
+    margin: 12px 0
+}
+
+.home-diario .capa-texto>p {
+    margin-top: 0;
+    font-size: 13px;
+    color: #e4ebfc
+}
+
+.home-diario .capa-texto>p>span {
+    display: inline;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #b7c8e8
+}
+
+.home-diario .capa-diario .selo-demo {
+    position: static;
+    display: block;
+    margin-top: 20px;
+    color: #c2d1ee;
+    font-size: 9px;
+    letter-spacing: .3px
+}
+
+.home-diario .resumo-home {
+    display: flex;
+    gap: 34px;
+    z-index: 1;
+    padding-right: 75px
+}
+
+.home-diario .resumo-home>div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px
+}
+
+.home-diario .resumo-home strong {
+    font-size: 33px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #f0ce7f
+}
+
+.home-diario .resumo-home span {
+    font-size: 12px;
+    color: #d7e1f5
+}
+
+.home-diario .asa-escola {
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 250px;
+    z-index: -1;
+    pointer-events: none
+}
+
+.home-diario .asa-escola span {
+    position: absolute;
+    right: -75px;
+    width: 220px;
+    height: 48px;
+    background: #ffffff08;
+    border-radius: 90% 12px 90% 12px;
+    transform: rotate(-32deg);
+    transform-origin: right center;
+    top: 12px
+}
+
+.home-diario .asa-escola span:nth-child(2) {
+    top: 57px;
+    right: -40px;
+    background: #ffffff0b;
+    width: 215px
+}
+
+.home-diario .asa-escola span:nth-child(3) {
+    top: 102px;
+    right: -15px;
+    background: #738bdd21;
+    width: 190px
+}
+
+.home-diario .asa-escola span:nth-child(4) {
+    top: 147px;
+    right: -6px;
+    background: #d7ad5024;
+    width: 145px;
+    height: 27px
+}
+
+.home-diario .section-header {
+    border: 0;
+    padding-top: 0;
+    align-items: center;
+    margin-bottom: 19px
+}
+
+.home-diario .section-header h2 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+    letter-spacing: -.5px
+}
+
+.home-diario .section-header p {
+    margin-top: 7px;
+    line-height: 1.5
+}
+
+.home-diario .contador {
+    border-radius: 7px;
+    padding: 3px 8px;
+    background: #e2e8f5;
+    color: #304dc0
+}
+
+.home-diario .link {
+    border: 0
+}
+
+.home-diario .dashboard {
+    gap: 30px
+}
+
+.home-diario .coluna-principal {
+    gap: 32px
+}
+
+.home-diario .turmas-grid {
+    border: 0;
+    gap: 16px
+}
+
+.home-diario .turma-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e2e7f1;
+    border-radius: 17px;
+    background: #fff;
+    padding: 22px;
+    box-shadow: 0 5px 16px #172b5807;
+    transition: transform .18s, box-shadow .18s, border-color .18s
+}
+
+.home-diario .turma-card:last-child {
+    border-right: 1px solid #e2e7f1
+}
+
+.home-diario .turma-card:before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 78px;
+    background: #eaf0fc;
+    z-index: 0
+}
+
+.home-diario .turma-card:nth-child(2):before {
+    background: #e6eaf6
+}
+
+.home-diario .turma-card:nth-child(3):before {
+    background: #f4eddb
+}
+
+.home-diario .turma-card>* {
+    position: relative
+}
+
+.home-diario .turma-card:hover {
+    transform: translateY(-4px);
+    background: #fff;
+    border-color: #9aadd9;
+    box-shadow: 0 12px 26px #172b5814
+}
+
+.home-diario .turma-icon {
+    width: 38px;
+    height: 38px;
+    background: #ffffffc9 !important;
+    border-radius: 12px;
+    color: #304dc0 !important;
+    font-size: 20px
+}
+
+.home-diario .turno {
+    position: absolute;
+    right: 18px;
+    top: 36px;
+    margin: 0;
+    color: #4e6286;
+    font-size: 8px
+}
+
+.home-diario .turma-card h3 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-top: 34px
+}
+
+.home-diario .turma-card>p {
+    font-size: 12px;
+    margin-top: 6px
+}
+
+.home-diario .card-footer {
+    border: 0;
+    background: #f4f6fb;
+    border-radius: 8px;
+    margin-top: 22px;
+    padding: 10px 11px;
+    font-size: 11px
+}
+
+.home-diario .card-footer i {
+    border-radius: 50%;
+    background: #e5ebf8;
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center
+}
+
+.home-diario .acompanhamento-card {
+    border: 1px solid #e2e7f1;
+    border-radius: 17px;
+    border-left: 0;
+    padding: 24px;
+    background: white;
+    box-shadow: 0 5px 16px #172b5807
+}
+
+.home-diario .aluno-avatar {
+    border-radius: 13px;
+    background: #edf0fa;
+    width: 44px;
+    height: 44px
+}
+
+.home-diario .tag,
+.home-diario .tag-atencao {
+    border-radius: 7px;
+    padding: 7px 10px
+}
+
+.home-diario .trilho,
+.home-diario .barra {
+    border-radius: 5px
+}
+
+.home-diario .contexto {
+    border: 0;
+    background: #f4f6fb;
+    border-radius: 11px;
+    padding: 15px
+}
+
+.home-diario .rendimento {
+    align-items: center
+}
+
+.home-diario .ferramentas {
+    border: 0;
+    gap: 14px
+}
+
+.home-diario .ferramentas>a,
+.home-diario .ferramenta-futura {
+    border: 1px solid #e2e7f1;
+    border-radius: 14px;
+    background: white;
+    padding: 20px 16px;
+    box-shadow: 0 4px 12px #172b5805
+}
+
+.home-diario .ferramentas>a:hover {
+    background: #f9faff
+}
+
+.home-diario .ferramenta-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: #edf1fa;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0
+}
+
+.home-diario .coluna-dia {
+    padding: 0;
+    border: 0
+}
+
+.home-diario .agenda {
+    border: 1px solid #e0e6f2;
+    border-radius: 18px;
+    background: #e7edf9;
+    padding: 25px;
+    box-shadow: 0 5px 16px #172b5807
+}
+
+.home-diario .agenda .section-header h2 {
+    font-size: 20px
+}
+
+.home-diario .data-agenda {
+    border: 0;
+    padding-bottom: 8px
+}
+
+.home-diario .aula {
+    background: #ffffffc9;
+    padding: 14px 12px;
+    border-radius: 11px;
+    gap: 12px;
+    margin-bottom: 12px
+}
+
+.home-diario .aula:last-child {
+    margin-bottom: 0
+}
+
+.home-diario .aula-info {
+    border: 0;
+    padding: 0;
+    min-width: 0
+}
+
+.home-diario .hora {
+    padding-right: 10px;
+    border-right: 1px solid #dce3f1
+}
+
+.home-diario .intervalo {
+    border: 0;
+    padding: 8px 3px;
+    margin-bottom: 12px
+}
+
+.home-diario .registros {
+    background: #fff;
+    border: 1px solid #e2e7f1;
+    border-radius: 17px;
+    padding: 24px;
+    margin-top: 22px;
+    box-shadow: 0 5px 16px #172b5807
+}
+
+.home-diario .registros .section-header h2 {
+    font-size: 19px
+}
+
+.home-diario .registro-exemplo {
+    padding: 15px;
+    background: #f5f7fb;
+    border-radius: 10px;
+    gap: 9px
+}
+
+.home-diario .ponto {
+    border-radius: 50%
+}
+
+.home-diario .nota {
+    border: 0;
+    padding: 5px 10px;
+    margin-top: 22px
+}
+
+.home-diario .nota p {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.7
+}
+
+@media(max-width:1150px) {
+    .home-diario .turno {
+        position: static;
+        display: block;
+        margin-top: 12px;
+        font-size: 8px
+    }
+
+    .home-diario .turma-card {
+        padding: 18px
+    }
+
+    .home-diario .turma-card:before {
+        height: 95px
+    }
+
+    .home-diario .turma-card h3 {
+        margin-top: 28px
+    }
+
+    .home-diario .resumo-home {
+        padding-right: 20px;
+        gap: 24px
+    }
+}
+
+@media(max-width:850px) {
+    .home-diario .registros {
+        margin-top: 0
+    }
+
+    .home-diario .coluna-dia {
+        align-items: start
+    }
+
+    .home-diario .turno {
+        position: absolute;
+        right: 16px;
+        top: 33px;
+        margin: 0
+    }
+
+    .home-diario .turma-card:before {
+        height: 78px
+    }
+
+    .home-diario .contexto {
+        border: 0;
+        padding: 15px
+    }
+}
+
+@media(max-width:600px) {
+    .home-diario .capa-diario {
+        display: block;
+        padding: 25px;
+        border-radius: 16px;
+        min-height: 0;
+        margin-bottom: 28px;
+        box-shadow: 0 6px 18px #172b5812
+    }
+
+    .home-diario .capa-diario h1 {
+        font-size: 30px;
+        margin: 11px 0
+    }
+
+    .home-diario .capa-texto>p>span {
+        display: block;
+        margin: 5px 0 0
+    }
+
+    .home-diario .resumo-home {
+        margin-top: 23px;
+        gap: 30px;
+        padding-right: 0
+    }
+
+    .home-diario .resumo-home>div {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 8px
+    }
+
+    .home-diario .resumo-home strong {
+        font-size: 26px
+    }
+
+    .home-diario .resumo-home span {
+        font-size: 11px
+    }
+
+    .home-diario .capa-diario .selo-demo {
+        margin-top: 14px;
+        font-size: 8px
+    }
+
+    .home-diario .asa-escola {
+        top: auto;
+        height: 200px;
+        width: 175px
+    }
+
+    .home-diario .section-header h2 {
+        font-size: 19px
+    }
+
+    .home-diario .turmas-grid {
+        gap: 10px;
+        grid-template-columns: 1fr
+    }
+
+    .home-diario .turma-card {
+        display: grid;
+        grid-template-columns: 44px 1fr auto;
+        gap: 4px 14px;
+        align-items: center;
+        padding: 18px;
+        border-radius: 14px
+    }
+
+    .home-diario .turma-card:before {
+        height: auto;
+        width: 7px;
+        inset: 0 auto 0 0;
+        background: #304dc0
+    }
+
+    .home-diario .turma-card:nth-child(2):before {
+        background: #172b58
+    }
+
+    .home-diario .turma-card:nth-child(3):before {
+        background: #d7ad50
+    }
+
+    .home-diario .turma-icon {
+        grid-column: 1;
+        grid-row: 1/3;
+        width: 42px;
+        height: 42px;
+        background: #edf1fa !important
+    }
+
+    .home-diario .turma-card h3 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 24px;
+        margin: 0
+    }
+
+    .home-diario .turma-card>p {
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 11px;
+        margin: 0
+    }
+
+    .home-diario .turno {
+        position: static;
+        grid-column: 3;
+        grid-row: 1;
+        margin: 0;
+        font-size: 7px;
+        justify-self: end
+    }
+
+    .home-diario .card-footer {
+        grid-column: 3;
+        grid-row: 2;
+        padding: 0;
+        background: none;
+        margin: 0;
+        gap: 10px;
+        font-size: 10px
+    }
+
+    .home-diario .card-footer i {
+        font-size: 13px;
+        width: 22px;
+        height: 22px
+    }
+
+    .home-diario .acompanhamento-card {
+        padding: 19px
+    }
+
+    .home-diario .contexto {
+        padding: 14px
+    }
+
+    .home-diario .agenda,
+    .home-diario .registros {
+        padding: 21px
+    }
+
+    .home-diario .registros .section-header h2 {
+        font-size: 19px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .home-diario .turma-card {
+        transition: none
+    }
+
+    .home-diario .turma-card:hover {
+        transform: none
+    }
+}
+
+/* Home do professor: composição baseada no wireframe validado. */
+.home-professor .capa-diario {
+    min-height: 0;
+    padding: 25px 30px;
+    margin-bottom: 32px
+}
+
+.home-professor .capa-diario h1 {
+    font-size: 30px;
+    margin: 10px 0
+}
+
+.home-professor .capa-diario .selo-demo {
+    margin-top: 12px
+}
+
+.home-professor .resumo-home {
+    padding-right: 25px
+}
+
+.home-professor .dashboard {
+    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 1fr);
+    gap: 28px;
+    align-items: start
+}
+
+.home-professor .coluna-principal {
+    gap: 25px
+}
+
+.home-professor .section-header {
+    min-height: 48px;
+    margin-bottom: 15px
+}
+
+.home-professor .turmas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px
+}
+
+.home-professor .turma-resumo {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 28px 12px;
+    padding: 24px 19px 15px;
+    align-items: start;
+    min-width: 0
+}
+
+.home-professor .turma-resumo:before {
+    display: none
+}
+
+.home-professor .turma-resumo h3 {
+    font-size: 29px;
+    margin: 0;
+    line-height: 1.2
+}
+
+.home-professor .turma-identificacao p {
+    font-size: 12px;
+    color: #52617c;
+    margin-top: 9px
+}
+
+.home-professor .turma-frequencia {
+    text-align: right;
+    min-width: 0
+}
+
+.home-professor .turma-frequencia strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #52617c;
+    line-height: 1.6
+}
+
+.home-professor .turma-frequencia span {
+    display: block;
+    font-size: 10px;
+    line-height: 1.6;
+    margin-top: 9px;
+    color: #52617c
+}
+
+.home-professor .turma-resumo .card-footer {
+    grid-column: 1/-1;
+    grid-row: auto;
+    width: 100%;
+    margin: 0;
+    padding: 9px 12px
+}
+
+.home-professor .acompanhamento-card {
+    padding: 20px
+}
+
+.home-professor .rendimento {
+    gap: 18px;
+    margin-top: 18px
+}
+
+.home-professor .horarios-painel {
+    background: white;
+    border: 1px solid #e2e7f1;
+    border-radius: 17px;
+    padding: 23px;
+    box-shadow: 0 5px 16px #172b5807
+}
+
+.home-professor .lista-horarios {
+    list-style: none;
+    margin: 0;
+    padding: 4px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0
+}
+
+.home-professor .horario-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 62px minmax(0, 1fr);
+    align-items: start;
+    gap: 37px;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    padding: 4px 0 30px
+}
+
+.home-professor .horario-item:last-child {
+    padding-bottom: 4px
+}
+
+.home-professor .horario-item:before {
+    content: '';
+    position: absolute;
+    left: 79px;
+    top: 12px;
+    bottom: -12px;
+    width: 2px;
+    background: #dce4f3
+}
+
+.home-professor .horario-item:last-child:before {
+    display: none
+}
+
+.home-professor .horario-item:after {
+    content: '';
+    position: absolute;
+    left: 74px;
+    top: 9px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #304dc0;
+    box-shadow: 0 0 0 1px #cbd6ee
+}
+
+.home-professor .horarios-painel>.texto-ajuda {
+    margin-top: 20px;
+    font-size: 11px;
+    line-height: 1.7
+}
+
+.home-professor .horario-hora {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    line-height: 1.4;
+    font-variant-numeric: tabular-nums
+}
+
+.home-professor .horario-hora>span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%)
+}
+
+.home-professor .horario-hora>time:last-child {
+    font-size: 12px;
+    color: #69758c;
+    font-weight: 400
+}
+
+.home-professor .horario-turma p {
+    font-size: 11px;
+    color: #52617c
+}
+
+.home-professor .horario-turma h3 {
+    font-size: 17px;
+    margin: 3px 0 5px
+}
+
+.home-professor .horario-turma>span {
+    font-size: 11px;
+    color: #52617c
+}
+
+.home-professor .sidebar-bottom .nav-item {
+    color: #cbd5ee
+}
+
+@media(max-width:1100px) {
+    .home-professor .dashboard {
+        grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr);
+        gap: 22px
+    }
+
+    .home-professor .turma-resumo {
+        padding: 19px 14px 14px;
+        grid-template-columns: 1fr;
+        gap: 15px
+    }
+
+    .home-professor .turma-frequencia {
+        text-align: left
+    }
+
+    .home-professor .turma-frequencia span {
+        margin-top: 3px
+    }
+
+    .home-professor .horarios-painel {
+        padding: 18px
+    }
+}
+
+@media(max-width:850px) {
+    .home-professor .dashboard {
+        grid-template-columns: 1fr
+    }
+
+    .home-professor .coluna-dia {
+        display: block
+    }
+
+    .home-professor .turma-resumo {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 26px 12px;
+        padding: 22px 18px 15px
+    }
+
+    .home-professor .turma-frequencia {
+        text-align: right
+    }
+}
+
+@media(max-width:600px) {
+    .home-professor .capa-diario {
+        padding: 23px
+    }
+
+    .home-professor .capa-diario h1 {
+        font-size: 27px
+    }
+
+    .home-professor .resumo-home {
+        margin-top: 19px;
+        padding: 0
+    }
+
+    .home-professor .turmas-grid {
+        grid-template-columns: 1fr
+    }
+
+    .home-professor .turma-resumo {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 22px 12px
+    }
+
+    .home-professor .turma-resumo h3 {
+        grid-column: auto;
+        grid-row: auto;
+        font-size: 27px
+    }
+
+    .home-professor .turma-resumo .card-footer {
+        grid-column: 1/-1;
+        grid-row: auto;
+        background: #f4f6fb;
+        padding: 9px 12px
+    }
+
+    .home-professor .turma-frequencia strong {
+        font-size: 14px
+    }
+
+    .home-professor .lista-horarios {
+        grid-template-columns: 1fr
+    }
+
+    .home-professor .section-header {
+        min-height: 0
+    }
+
+    .home-professor .section-header h2 {
+        font-size: 19px
+    }
+
+    .home-professor .aluno-linha {
+        flex-wrap: wrap;
+        gap: 10px
+    }
+
+    .home-professor .tag-atencao {
+        margin-left: 0
+    }
+
+    .home-professor .horarios-painel {
+        padding: 18px
+    }
+}
+
+/* Teste de paleta neutra no conteúdo da home; identidade do menu preservada. */
+.home-professor {
+    --tinta: #272b33;
+    --papel: #f5f5f3;
+    --linha: #e0e3e8;
+    background: var(--papel);
+    color: var(--tinta)
+}
+
+.home-professor .sidebar {
+    background: #172b58
+}
+
+.home-professor .topbar {
+    background: #fff;
+    border-color: #e0e3e8
+}
+
+.home-professor .section-header h2,
+.home-professor .turma-resumo h3,
+.home-professor .aluno-linha h3,
+.home-professor .horario-turma h3,
+.home-professor .horario-hora,
+.home-professor .barra-linha strong {
+    color: #272b33
+}
+
+.home-professor .section-header p,
+.home-professor .turma-identificacao p,
+.home-professor .turma-frequencia strong,
+.home-professor .turma-frequencia span,
+.home-professor .aluno-linha p,
+.home-professor .rendimento>div>p,
+.home-professor .barra-linha,
+.home-professor .contexto p,
+.home-professor .contexto>span,
+.home-professor .horario-turma p,
+.home-professor .horario-turma>span,
+.home-professor .horario-hora>time:last-child,
+.home-professor .texto-ajuda {
+    color: #626975
+}
+
+.home-professor .turma-resumo,
+.home-professor .turma-resumo:last-child,
+.home-professor .acompanhamento-card,
+.home-professor .horarios-painel {
+    border-color: #e0e3e8;
+    box-shadow: 0 5px 16px #272b3307
+}
+
+.home-professor .turma-resumo:hover {
+    border-color: #aeb7c2;
+    box-shadow: 0 9px 22px #272b3310
+}
+
+.home-professor .turma-resumo .card-footer,
+.home-professor .contexto {
+    background: #f4f5f6;
+    color: #626975
+}
+
+.home-professor .card-footer i {
+    background: #e8ecf0;
+    color: #405570
+}
+
+.home-professor .tag,
+.home-professor .aluno-avatar {
+    background: #eceff2;
+    color: #526171
+}
+
+.home-professor .tag-atencao {
+    background: #f7e9bf;
+    color: #71551b
+}
+
+.home-professor .trilho {
+    background: #eceef1
+}
+
+.home-professor .anterior {
+    background: #b7c1cd
+}
+
+.home-professor .atual {
+    background: #71839a
+}
+
+.home-professor .contexto>i {
+    color: #7a899d
+}
+
+.home-professor .horario-item:before {
+    background: #e0e3e8
+}
+
+.home-professor .horario-item:after {
+    background: #7a899d;
+    box-shadow: 0 0 0 1px #d7dde4
+}
+
+.home-professor .link {
+    color: #405570;
+    text-decoration: none;
+    border-bottom: 0
+}
+
+.home-professor .contexto .acao-ficha {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 44px;
+    padding: 10px 13px;
+    margin-top: 13px;
+    background: #e7ebf0;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    color: #405570;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none
+}
+
+.home-professor .contexto .acao-ficha:hover {
+    background: #dce3eb;
+    border-color: #b8c4d1;
+    color: #273b53
+}
+
+.home-professor .acao-ficha:active {
+    background: #d1dbe6
+}
+
+.home-professor .acao-ficha:focus-visible {
+    outline: 3px solid #405570;
+    outline-offset: 3px
+}
+
+.home-professor .section-header>.link:hover {
+    color: #273b53;
+    background: #e7ebf0;
+    border-radius: 6px
+}

@@ -1,0 +1,42 @@
+/* Quadro semanal: controles compactos e colunas por turma. */
+.pagina-horarios{--qh-verde:#eaf0e9;--qh-tinta:#303a36;--qh-ouro:#b18b46}
+.pagina-horarios main{max-width:1600px}
+.qh-intro,.qh-linha,.qh-cabecalho,.qh-dialog-top{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.qh-intro{margin:8px 0 14px}.qh-intro p,.qh-cabecalho p{color:#68717c;font-size:13px}
+.pagina-horarios .qh-botao{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;border:1px solid #d8ddd9;border-radius:10px;background:#fff;color:#3d4741;padding:10px 14px;font-weight:600;font-size:13px;white-space:nowrap}
+.pagina-horarios .qh-botao:hover{background:#edf1eb}.pagina-horarios .qh-botao.principal,.pagina-horarios .qh-botao[aria-pressed=true]{background:#405649;color:white;border-color:#405649}
+.pagina-horarios :focus-visible{outline:3px solid #82682e;outline-offset:3px}
+.pagina-horarios .qh-nota{font-size:12px;color:#68717c;margin:10px 0 18px;line-height:1.6}
+.qh-controles{background:#fff;border:1px solid #e1e5e1;border-radius:18px;padding:22px 24px;box-shadow:0 6px 24px #25382c05}
+.qh-linha:first-child{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid #edf0ec}
+.qh-dias,.qh-anos{display:flex;gap:5px;flex-wrap:wrap}
+.pagina-horarios .qh-dias button,.pagina-horarios .qh-anos button{min-height:42px;border:0;border-radius:9px;background:transparent;color:#657068;padding:10px 15px;font-weight:600}
+.pagina-horarios .qh-dias button[aria-pressed=true]{background:#405649;color:white;box-shadow:0 3px 8px #40564920}
+.pagina-horarios .qh-anos{background:#f3f4f0;padding:4px;border-radius:11px}
+.pagina-horarios .qh-anos button{padding:8px 12px;min-height:36px;font-size:12px}
+.pagina-horarios .qh-anos button[aria-pressed=true]{background:#fff;color:#343d36;box-shadow:0 2px 6px #25382c12}
+.qh-hoje{font-size:12px;color:#657068}.qh-ferramentas{flex-wrap:wrap;gap:12px}
+.qh-busca{position:relative;flex:1;min-width:220px}.qh-busca>i{position:absolute;top:15px;left:14px;color:#68756b;pointer-events:none}
+.pagina-horarios .qh-busca input{width:100%;margin:0;border:1px solid #dce1da;background:#fafbf9;border-radius:10px;padding:12px 14px 12px 40px;font:inherit;min-height:44px;color:#303a36}
+#sugestoes{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:12;background:white;border:1px solid #dce1da;border-radius:12px;padding:6px;box-shadow:0 12px 32px #172b5820;max-height:290px;overflow-y:auto}
+#sugestoes [role=option]{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border-radius:7px;cursor:pointer;font-size:13px}
+#sugestoes [aria-selected=true],#sugestoes [role=option]:hover{background:#eaf0e9}#sugestoes small{font-size:10px;text-transform:uppercase;letter-spacing:.6px;margin:0;color:#657068}
+.qh-chips{display:flex;flex-wrap:wrap;gap:8px}.qh-chips:not(:empty){margin-top:16px}.pagina-horarios .qh-chip{background:#eef1e9;border:0;padding:8px 11px;border-radius:7px;color:#485443;font-size:12px}
+.qh-cabecalho{margin:30px 0 8px}.qh-cabecalho h2{font-size:22px}.qh-cabecalho p{margin-top:7px}
+.qh-grupo{margin:24px 0}.qh-grupo>h3{margin:0 0 14px;font-size:15px;color:#68717c}
+.qh-grade{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:start}
+.qh-turma{background:#fff;border:1px solid #e1e5df;border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #25382c04;min-width:0}
+.qh-turma>header{padding:19px 20px;background:#eaf0e9;border-top:4px solid #a4b79c;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.qh-turma:nth-child(2)>header{background:#edf0f3;border-color:#a1afbf}.qh-turma:nth-child(3)>header{background:#f4efe3;border-color:#c8b17d}.qh-turma:nth-child(4)>header{background:#eeedf2;border-color:#b1a9bf}
+.qh-turma header h3{font-size:24px;letter-spacing:-.7px}.qh-turma header span{font-size:11px;color:#5f6d61}
+.qh-aulas{list-style:none;margin:0;padding:8px 14px}.qh-aula{padding:14px 0;border-bottom:1px solid #eef0eb;display:flex;gap:12px;min-height:91px}.qh-aula:last-child{border-bottom:0}
+.qh-ordem{font-size:12px;font-weight:650;flex:0 0 27px;color:#8a7750;padding-top:2px}.qh-aula-info{min-width:0;flex:1}.qh-aula-info strong{font-size:13px;line-height:1.45;display:block;font-weight:650;overflow-wrap:anywhere}.qh-aula-info p{font-size:12px;color:#66706a;margin-top:4px;overflow-wrap:anywhere}.qh-sala{display:block;margin-top:7px;font-size:11px;color:#727b74}.qh-pendente{display:inline-block;background:#fff0d3;color:#79581c;padding:3px 7px;border-radius:5px;font-size:10px;margin-top:7px}
+.qh-aula.sem-aula{min-height:65px;align-items:center;color:#8a918b}.qh-aula.sem-aula strong{font-weight:400;font-size:12px}.qh-aula button{width:100%;display:flex;gap:12px;text-align:left;border:0;border-radius:8px;background:#f4f6f1;color:inherit;padding:10px}.qh-aula button:hover{background:#e6ecdf}.qh-aula:has(button){padding:6px 0;border:0}
+.qh-vazio{padding:40px 24px;text-align:center;background:#fff;border-radius:16px;border:1px solid #e1e5df;color:#68717c}.qh-vazio p{margin:10px 0 20px}
+.qh-dialog{border:0;border-radius:18px;padding:28px;width:min(480px,calc(100% - 32px));max-height:90dvh;color:#303a36;box-shadow:0 18px 70px #172b5830;font-family:inherit}
+.qh-dialog::backdrop{background:#18231e66}.qh-dialog h2{font-size:23px}.qh-dialog-top{margin-bottom:18px}.qh-dialog-top .qh-botao{font-size:23px;padding:5px 12px}.qh-dialog p{font-size:13px;color:#68717c}
+.qh-dialog label{display:block;margin:22px 0 8px;font-size:13px;font-weight:600}.qh-dialog label span{font-weight:400;color:#68717c}.qh-dialog input,.qh-dialog select{font:inherit;width:100%;min-height:44px;padding:10px 12px;border:1px solid #d5dbd2;border-radius:9px;background:#fafbf9;color:#303a36}.qh-dialog-acoes{display:flex;justify-content:space-between;gap:12px;margin-top:30px;padding-top:20px;border-top:1px solid #e8ece5}
+.qh-drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100dvh;max-height:100dvh;border-radius:20px 0 0 20px;width:min(420px,100%);padding:30px}
+#erro-editor,#mensagem{color:#86541c;font-size:13px;margin:12px 0}#mensagem:empty,#erro-editor:empty{display:none}.qh-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:1150px){.qh-grade{grid-template-columns:repeat(2,minmax(0,1fr))}.qh-anos{flex-basis:100%}}
+@media(max-width:600px){.qh-intro{align-items:flex-start;flex-direction:column}.qh-controles{padding:16px}.qh-linha:first-child{align-items:flex-start;flex-direction:column;gap:10px}.pagina-horarios .qh-dias button{font-size:12px;padding:9px 10px}.qh-grade{grid-template-columns:1fr}.qh-busca{flex-basis:100%}.qh-cabecalho{align-items:flex-start;gap:12px}.qh-cabecalho h2{font-size:19px}.qh-cabecalho .qh-botao{font-size:11px;padding:9px}.qh-dialog{padding:22px}.qh-drawer{border-radius:0}.qh-anos{gap:1px}.pagina-horarios .qh-anos button{padding:8px 9px}}
